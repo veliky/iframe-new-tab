@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>IFrame New Tab :: Settings</title>
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="milligram.min.css">
+
+    <style>
+
+      html, body {
+        margin: 0 auto;
+        padding: 0;
+        height: 100%;
+      }
+
+      body iframe {
+        width: 100%;
+        min-height: 50%;
+        display: block;
+        border: none;
+      }
+
+      .header {
+        padding: 2.5rem 0;
+      }
+
+      .example_input {
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <main class="wrapper">
+
+      <header>
+        <div class="container">
+          <h1 class="header">IFrame New Tab <a href="https://github.com/Veliky/iframe-new-tab" target="_blank" class="button button-clear">Github &#128279;</a></h1>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="row">
+          <div class="column column-60">
+            <label for="input">URL:</label>
+          </div>
+          <div class="column">
+            <label id="output"></label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column column-60">
+            <input type="url" id="input" placeholder="https://">
+          </div>
+          <div class="column">
+            <button id="check_button" class="button button-outline">Check</button>
+            <button id="save_button" class="button button-primary">Save</button>
+            <button id="set_default_button" class="button button-outline">Default</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <h5>Check examples of open sites:</h5>
+            <a class="example_input">https://www.wikipedia.org/</a><br>
+            <a class="example_input">https://index.okfn.org</a><br>
+            <a class="example_input">https://europa.eu</a><br>
+            <a class="example_input">http://www.o-bible.com</a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <h2 class="header">Preview:</h2>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </body>
+
+  <script src="iframe.js"></script>
+  <script src="options.js"></script>
+
+</html>
